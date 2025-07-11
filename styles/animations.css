@@ -30,7 +30,7 @@
       fill: var(--heart-color-red);
     }
 }
-
+/*сердце*/
 .like-icon .heart {
   transform-origin: center;
   }
