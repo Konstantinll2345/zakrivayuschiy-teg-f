@@ -87,7 +87,6 @@
   object-position: center;
   outline: var(--outline-block);
   inline-size: 100%;
-  block-size: 100%;
   block-size: var(--card-size-image);
 }
 
@@ -180,7 +179,7 @@
   transform: scaleX(1);
 }
 
-.card__icon-button:focus  {
+.card__icon-button:focus {
   outline: none;
 }
 
@@ -192,7 +191,7 @@
  
 }
 
-.card__icon-button:focus-visible  {
+.card__icon-button:focus-visible {
   outline: var(--outline-block);
   transition: outline 0.3s ease;
 }
@@ -205,13 +204,15 @@
   font-size: 14px;
 }
 
-.button__text{
+.button__text {
   position: relative;
   z-index: 3;
   color: var(--color-button-text-hover);
-  font-family: var(--main-accent-font);
   font-size: 14px;
   mix-blend-mode: difference;
+  font-family: var(--main-accent-font),sans-serif;
+  font-weight: 400;
+  line-height: 90%;
   
 }
 
@@ -227,18 +228,18 @@
 .button__save {
   display:grid;
   grid-template-columns: min-content 1fr;
-  background-color: var(--background-color);
-  padding: 17px 20px 17px 20px ;
   gap: 8px;
+  padding: 17px 20px 17px 20px ;
+  background-color: var(--background-color);
 }
 
 
 .button__floppy {
-  inline-size: 21px;
-  block-size: 21px;
   position: relative;
   z-index: 3;
   color: var(--color-button-text-hover);
+  inline-size: 21px;
+  block-size: 21px;
   mix-blend-mode: difference;
 }
 
@@ -253,13 +254,6 @@
     width: 28px;
     height: 28px;
   }
-}
-
-.button__text {
-  font-family: var(--main-accent-font),sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 90%;
 }
 
 .dialog {
@@ -331,7 +325,7 @@
 }
 
 .card__image-failure {
-  filter: invert(20%)
+  filter: invert(20%);
 }
 
 .card__image-djim {
