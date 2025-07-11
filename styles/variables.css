@@ -1,1 +1,45 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter-Variable";
+  --main-accent-font: "PressStart";
+
+  --main-background-image:url("../images/background.jpg");
+  --background-gradient: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
+  repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
+  linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);;
+
+  --font-weight-card-title: "wght" 700;
+  --font-weight-card-paragraph: "wght" 400;
+
+  --content-inline-size: clamp(23.1875rem, 15.9472rem + 30.892vw, 43.75rem);
+  --header-logo-inline-size: clamp(21.4375rem, 18.9727rem + 10.5164vw, 28.4375rem);
+  --footer-floppy-size: clamp(1.75rem, 1.904rem + -0.6573vw, 1.3125rem);
+  --dialog-inline-size: clamp(21.4375rem, 21.2174rem + 0.939vw, 22.0625rem);
+  
+
+  --outline-block: 2px solid #000000;
+  --outline-card-image: 2px 0px 2px 0px solid #000000;
+  --focus-button-like: 2px 2px 0px 0px #000000;
+;
+
+  --background-color: #FFFFFF;
+  --text-color:#000000;
+  --accent-color: #000000;
+  --dialog-main-background: rgba(0, 0, 0, 0.75);
+  --color-button-text-hover: #FFFFFF;
+  --heart-color-red: #FF0000;
+  --heart-color-white:#FFFFFF;
+  
+
+  --header-logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);;
+  --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --text-font-size-button: 14px;
+
+  --header-padding-logo-top: clamp(7.5rem, 6.9159rem + 2.4922vw, 8rem);
+  --header-padding-logo-horizon: clamp(1rem, -1.2997rem + 9.8122vw, 7.53125rem);
+  --header-padding-title-bottom: clamp(7.625rem, 7.4489rem + 0.7512vw, 8.125rem);
+  --dialog-padding-size: clamp(1.875rem, 1.6549rem + 0.939vw, 2.5rem);
+  --dialog-button-padding-size: clamp(7.25rem, 6.8979rem + 1.5023vw, 8.25rem);
+
+  --card-size-image: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+}
