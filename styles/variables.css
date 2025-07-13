@@ -8,8 +8,9 @@
   repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
   linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 
-  --font-weight-card-title: "wght" 700;
-  --font-weight-card-paragraph: "wght" 400;
+  --font-weight-card-title: 715;
+  --font-weight-card-paragraph: 410;
+  --font-weight-header-title: 400;
 
   --content-inline-size: clamp(23.1875rem, 15.9472rem + 30.892vw, 43.75rem);
   --header-logo-inline-size: clamp(21.4375rem, 18.9727rem + 10.5164vw, 28.4375rem);

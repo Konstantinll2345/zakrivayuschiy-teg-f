@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   background: var(--background-gradient);
   background-color: var(--background-color);
   background-image: var(--main-background-image);
@@ -39,7 +39,7 @@
 .header__logo {
   padding-block-end: 20px;
   color: var(--text-color);
-  font-family: var(--main-accent-font),sans-serif;
+  font-family: var(--main-accent-font),fantasy;
   font-weight: "wght" var(--font-weight-card-paragraph);
   font-size: var(--header-logo-font-size);
   line-height: 100%;
@@ -50,7 +50,7 @@
   padding: 20px 0 var(--header-padding-title-bottom) 0;
   color: var(--text-color);
   font-family: var(--main-accent-font),sans-serif;
-  font-weight: "wght" var(--font-weight-card-paragraph);
+  font-variation-settings: "wght" var(--font-weight-header-title);
   font-size: var(--header-title-font-size);
   text-transform: uppercase;
 }
@@ -65,7 +65,7 @@
 
 .card__content {
   outline: var(--outline-block);
-  background-color: var(--background-color) ;
+  background-color: var(--background-color);
   inline-size: var(--content-inline-size);
 }
 
@@ -73,7 +73,7 @@
   padding: 5px 10px 5px 10px;
   color: var(--text-color);
   font-family: var(--main-font),sans-serif;
-  font-weight: 715;
+  font-variation-settings: "wght" var(--font-weight-card-title);
   font-size: 18px;
 }
 
@@ -96,7 +96,7 @@
   right: 25px;
   z-index: 1;
   opacity: 50%;
-  font-family: var(--main-accent-font),sans-serif;
+  font-family: var(--main-accent-font),fantasy;
   font-weight: "wght" var(--font-weight-card-paragraph);
   font-size: 14px;
   text-shadow: -1px 0 var(--text-color), 0 1px var(--text-color),
@@ -114,15 +114,7 @@
 .card__paragraph {
   padding: 27px 25px 0 25px;
   font-family: var(--main-font),sans-serif;
-  font-weight: 410;
-  font-size: 18px;
-}
-
-
-.card__memories {
-  padding: 25px 25px 0 25px;
-  font-family: var(--main-font),sans-serif;
-  font-weight: 410;
+  font-variation-settings: "wght" var(--font-weight-card-paragraph);
   font-size: 18px;
 }
 
@@ -143,6 +135,15 @@
   background-color: transparent;
   cursor: pointer;
   appearance: none;
+  transition: outline 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: var(--outline-block);
 }
 
 .button {
@@ -152,6 +153,8 @@
   align-items: center;
   background-color: var(--background-color);
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border: var(--outline-block);
 }
 
 .button:focus {
@@ -160,7 +163,6 @@
 
 .button:focus-visible {
   box-shadow: var(--focus-button-like);
-  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -179,9 +181,6 @@
   transform: scaleX(1);
 }
 
-.card__icon-button:focus {
-  outline: none;
-}
 
 .like-icon {
   display: block;
@@ -191,15 +190,11 @@
  
 }
 
-.card__icon-button:focus-visible {
-  outline: var(--outline-block);
-  transition: outline 0.3s ease;
-}
 
 .card__like-button {
   min-width: 130px;
   color: var(--text-color);
-  font-family: var(--main-accent-font),sans-serif;
+  font-family: var(--main-accent-font),fantasy;
   font-weight: 400;
   font-size: 14px;
 }
@@ -210,7 +205,7 @@
   color: var(--color-button-text-hover);
   font-size: 14px;
   mix-blend-mode: difference;
-  font-family: var(--main-accent-font),sans-serif;
+  font-family: var(--main-accent-font),fantasy;
   font-weight: 400;
   line-height: 90%;
   
@@ -221,8 +216,10 @@
   color: var(--color-button-text-hover);
 }
 
-.footer {
+.section__button {
   padding: 50px 0 100px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .button__save {
@@ -286,7 +283,7 @@
 }
 
 .button__title {
-  font-family: var(--main-accent-font), sans-serif;
+  font-family: var(--main-accent-font),fantasy;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -297,42 +294,43 @@
   display: flex;
   justify-content: center;
   border: var(--outline-block);
-  padding: 12px;
+  padding: 11.1px;
   text-transform: uppercase;
   background-color: var(--background-color);
+  max-inline-size: 293px;
 }
 
 
-.card__image-sunset {
+.card__image-filter-blur {
   filter: blur(1px) ;
 }
 
-.card__image-topor {
+.card__image-filter-saturate-contrast {
   filter: saturate(2.2) contrast(120%);
 }
 
-.card__image-men {
+.card__image-filter-hue-raotate {
   filter: hue-rotate(0.3turn);
 }
 
 
-.card__image-perfect {
+.card__image-filter-huerotate {
   filter: hue-rotate(20deg);
 }
 
-.card__image-review {
+.card__image-filter-sepia {
   filter: sepia(30%);
 }
 
-.card__image-failure {
+.card__image-filter-invert {
   filter: invert(20%);
 }
 
-.card__image-djim {
+.card__image-filter-grayscale-huerotate {
   filter: grayscale(80%) hue-rotate(0.6turn);
 }
 
-.card__image-sport {
+.card__image-filter-blur-contrast {
   filter: blur(1px) contrast(50%) ;
 }
 
