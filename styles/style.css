@@ -216,7 +216,7 @@
   color: var(--color-button-text-hover);
 }
 
-.section__button {
+.block__button {
   padding: 50px 0 100px 0;
   display: flex;
   justify-content: center;
